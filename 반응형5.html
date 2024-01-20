@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .wrap_inner {
+            width: 100%;
+        }
+
+        .box1 {
+            width: 30%;
+            height: 400px;
+            background: darkkhaki;
+            float: left;
+        }
+
+        .box2 {
+            width: 40%;
+            height: 400px;
+            background: darkcyan;
+            float: left;
+        }
+
+        .box3 {
+            width: 30%;
+            height: 400px;
+            background: darkgoldenrod;
+            float: left;
+        }
+
+        @media screen and (max-width:1024px) {
+            .wrap {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            .wrap {
+                width: 150%;
+            }
+            /* .box1 {    width: 33.3333%;      }
+            .box2 {     width: 33.3333%;       }
+            .box3 {    width: 33.3333%;        } */
+        }
+
+        @media screen and (max-width:480px) {
+            .wrap {
+                width: 100%;
+            }
+            .wrap_inner{width: 300%;
+            margin-left: -100%;}
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="wrap_inner">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+</body>
+
+</html>

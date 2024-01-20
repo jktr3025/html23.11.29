@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        .wrap{
+            margin: 0 auto;
+            width: 1000px;
+            }
+            .box1{
+                background: violet;
+                width: 100%;
+                height: 400px;
+            }
+            .box2{
+                background: salmon;
+                width: 50%;
+                height: 400px;
+                float: left;
+                
+            }
+            .box3{
+                background: slateblue;
+                width: 50%;
+                height: 400px;
+                float: left;
+                
+            }
+            @media screen and (max-width : 1024px) {
+                .wrap{width:90%}
+                
+            }
+            @media screen and (max-width : 800px) {
+                .wrap{width:100%}
+            }
+            @media screen and (max-width : 480px) {
+            .box2{
+                float: none;
+                width: 100%;
+            }
+            .box3{
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        .box1{
+            width: 30%;
+            background: darkgreen;
+            height: 300px;
+            float: left;
+        }
+        .box2{
+            width: 50%;
+            background: skyblue;
+            height: 300px;
+            float: left;
+        }
+        .box3{
+            width: 20%;
+            background: wheat;
+            height: 300px;
+            float: left;
+        }
+        @media screen and (max-width:1024px) {
+            .box2{width: 70%;}
+            .box3{
+                clear: both;
+                width: auto;
+                float: none;
+            }
+        }
+        @media screen and (max-width:800px) {
+            .box1{width: auto;
+                float: none;}
+            .box2{width: auto;
+                float: none;}
+            .box3{width: auto;
+                float: none;}
+            }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

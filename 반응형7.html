@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul, ol, li{
+            list-style: none;
+        }
+        body{
+            background: gainsboro;
+        }
+        .wrap{
+            width: 99%;
+            /* background: darkorchid; */
+            padding: 20px 0;
+        }
+        .wrap_inner{
+            width: 400px;
+            /* height: 150px; */
+            background: white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .wrap_inner li{
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            padding: 5px;
+            margin: 30px 25px;
+        }
+        @media screen and (orientation : landscape) {
+            .wrap{background: darkgoldenrod;}
+            .wrap_inner li{background: darkgoldenrod;}
+        }
+        @media screen and (orientation : portrait) {
+            .wrap{background: green;}
+            .wrap_inner li{background: green;}
+        }
+        @media screen and (max-width:400px) {
+            .wrap{
+                background: navy;            }
+                .wrap_inner li{background: navy;}
+            .wrap_inner{width: 300px;}
+            .wrap_inner li:nth-child(4){display: none;}
+            
+        }
+        @media screen and (max-width:350px) {
+            .wrap{
+                background: pink;            }
+                .wrap_inner li{background: pink;}
+            .wrap_inner{width: 200px;}
+            .wrap_inner li:nth-child(3){display: none;}
+            /* .wrap_inner li:nth-child(4){display: none;} */
+            /* 넓이 400일때 준 명령어가 물고 들어오기 때문에 안 줘도 됨 */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="wrap_inner">
+        <ul class="list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>

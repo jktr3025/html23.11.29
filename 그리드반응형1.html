@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            background:darkblue;
+        }
+        .wrap{
+            width: auto;
+            max-width: 960px;
+            margin: 0 auto;
+            border: 1px solid tan;
+            padding: 20px;
+            color: antiquewhite;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            
+        }
+        .wrap > div{
+            background: darkkhaki;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        @media screen and (max-width:800px) {
+            .wrap{
+                grid-template-columns:repeat(2, 1fr);
+            }
+                    }
+        @media screen and (max-width:300px) {
+            .wrap{
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+                    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+        <div class="box8">8</div>
+        <div class="box9">9</div>
+    </div>
+</body>
+</html>

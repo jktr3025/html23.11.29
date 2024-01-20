@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+body , html{
+ width: 100%;
+ height: 1000px;
+}
+.wrap{
+    width: 100%;
+    height: 1000px;
+    background: darkblue;
+}
+.w_up{
+    height: 900px;
+    background: olive;
+    display: flex;
+}
+.u_left{
+    width: 200px;
+    height: 900px;
+    background: orchid;
+    
+    padding: 10px 0;
+}
+.u_left h1{
+    text-align: center;
+    /* border: 1px solid sienna; */
+}
+.u_left h1 a{
+    display: block;
+    background: pink;
+}
+.nav{}
+.main{}
+.main > li{
+    width: 150px;
+    margin: 10px auto;
+    text-align: center;
+    /* border: 1px solid saddlebrown; */
+}
+.main > li > a{
+    display: block;
+    background: snow;
+    height: 45px;
+    line-height: 45px;
+    color: darkblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main > li:hover > a{
+    background: skyblue;
+}
+.main > li:hover .sub{
+    display: block;
+}
+.sub{
+    display: none;
+}
+.sub li{}
+.sub li a{
+    display: block;
+    background: olivedrab;
+    color: tan;
+    height: 40px;
+    line-height: 40px;
+}
+.sub li:hover a{
+    background: yellowgreen;
+    color: seagreen;
+}
+
+.u_middle{
+    width: 400px;
+    height: 900px;
+    background: darkorange;
+}
+.m_1{
+    width: 400px;
+    height: 300px;
+    /* border: 1px solid skyblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m_notice{
+    width: 95%;
+    height: 95%;
+    border: 1px slateblue solid;
+}
+.m_2{
+    width: 400px;
+    height: 400px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.m_2 div{
+    width: 45%;
+    height: 90%;
+    border: 1px steelblue solid;
+}
+.m_3{
+    width: 400px;
+    height: 200px;
+    /* border: 1px solid black; */
+
+}
+.list{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list li{
+    width: 80px;
+    height: 80px;
+    border: 1px solid springgreen;
+}
+.u_right{
+    width: calc(100% - 600px);
+    height: 900px;
+    background: darkgoldenrod;
+}
+
+.w_down{
+    height: 100px;
+    background: sienna;
+    display: flex;
+}
+.d_logo{
+    width: 200px;
+    height: 100px;
+    background: seagreen;
+}
+.d_logo a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: snow;
+    font-weight: bold;
+}
+.d_lorem{
+    width: calc(100% - 400px);
+    height: 100px;
+    background: darkkhaki;
+    padding: 20px;
+}
+.d_family{
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    background: darkorchid;
+    text-align: center;
+    font-size: 30px;
+    color: snow;
+    font-weight: bold;
+}
